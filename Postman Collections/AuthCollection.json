@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "bae34530-bd9a-463d-839e-f13068b1ee77",
+		"name": "AUTH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SIGNUP",
+			"id": "4db65ce0-06a3-43ee-bd64-1dbb91eb82bd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"John Doe\",\r\n    \"email\": \"john@email.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5001/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"id": "a7919c30-22f3-4866-ab0d-fe663ed2d989",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"john@email.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5001/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "LOGOUT",
+			"id": "0da606dc-a7bd-418d-916e-d9d8d7d66a1f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:5001/api/auth/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "CHECK AUTH",
+			"id": "0d6702fe-1325-4874-a795-7e0a770ca9ff",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5001/api/auth/check"
+			},
+			"response": []
+		}
+	]
+}
